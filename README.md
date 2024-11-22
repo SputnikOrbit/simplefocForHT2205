@@ -1,4 +1,6 @@
-在适配HT2205电机与simplefoc控制板时使用的代码，向hfoc控制板中最终烧录的是simpefocFor2205Debug，因为debug保留有串口输出，可以减少调参和排障工作量。
+在适配HT2205电机与simplefoc控制板时使用的代码。
+
+![image-20241122144849687](README.assets/image-20241122144849687.png)向hfoc控制板中最终烧录的是simpefocFor2205Debug，因为debug保留有串口输出，可以减少调参和排障工作量。
 
 ![image-20241122143532154](README.assets/image-20241122143532154.png)
 
