@@ -39,39 +39,3 @@ void loop() {
   as5600.update();
   _delay(100);
 }
-
-// float getAngle(){
-//   Wire.beginTransmission(AS5600_ADDRESS);
-//   Wire.write(RAW_ANGLE_REGISTER);
-//   Wire.endTransmission();
-//   Wire.requestFrom(AS5600_ADDRESS, 2);
-//   if (Wire.available() == 2) {
-//     uint16_t rawAngle = Wire.read() << 8 | Wire.read();
-//   float angle = rawAngle * 0.00153 - angle_zero; // 转换为角度值
-//   }
-//   return angle;
-// }
-// #include <Wire.h>
-
-// #define AS5600_ADDRESS 0x36
-// #define RAW_ANGLE_REGISTER 0x0C
-
-// void setup() {
-// Serial.begin(115200);
-// Wire.begin();
-// }
-
-// void loop() {
-// Wire.beginTransmission(AS5600_ADDRESS);
-// Wire.write(RAW_ANGLE_REGISTER);
-// Wire.endTransmission();
-// Wire.requestFrom(AS5600_ADDRESS, 2);
-
-// if (Wire.available() == 2) {
-// uint16_t rawAngle = Wire.read() << 8 | Wire.read();
-// //float angle = rawAngle * 0.0879; // 转换为角度值
-// Serial.println(rawAngle);
-// }
-
-// delay(100);
-// }
