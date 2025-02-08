@@ -18,11 +18,11 @@
 #include <SimpleFOC.h>
 /**************************************************/
 /*固有参数表，每个电调需要调整的内容*/
-#define MEC_NAME "Mouse0"
-#define MOTOR_CODE "M2"
+#define MEC_NAME "Mec2"
+#define MOTOR_CODE "M1"
 
-Direction motor_dir = Direction::CW;
-float zero_electric_angle = 1.08;
+Direction motor_dir = Direction::CCW;
+float zero_electric_angle = 1.3;
 /**************************************************/
 
 
@@ -111,7 +111,7 @@ void setup() {
   motor.init();
   motor.initFOC();
   motor.enable();
-  _delay(1000);
+  _delay(2000);
 
   pinMode(PA15, INPUT);
   attachInterrupt(digitalPinToInterrupt(PA15), pulseHandler, CHANGE);

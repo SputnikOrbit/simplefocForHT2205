@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/sputnik/Arduino/libraries/Simple_FOC/src/*"
+                "/home/sputnik/Arduino/libraries/Simple_FOC/src"
             ],
             "defines": [],
             "compilerPath": "/usr/lib/ccache/gcc",
